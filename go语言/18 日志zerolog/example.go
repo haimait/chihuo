@@ -39,3 +39,9 @@ func Three() {
 	applog.Logger("app").Info().Msg("user info.")
 	applog.Logger("pay").Info().Msg("pay info.")
 }
+
+func Four() {
+	applog.InitV2("app", "pay")
+	applog.Logger("app").Info().Msg("user info1.")
+	applog.Logger("pay").Info().Msg("pay info2.")
+}
